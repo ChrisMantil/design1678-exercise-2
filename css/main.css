@@ -103,6 +103,9 @@ color: #fff;
 
   background-color: rgba(127, 219, 255, 0.6);
   transition: background-color 100ms linear;
+
+    -webkit-animation: slide-up 1200ms ease-out;
+  animation: slide-up 1200ms ease-out;
 }
 
 .chart__item:hover .chart__bar {
@@ -144,4 +147,22 @@ top: -4em;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #000;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+  top: 10em;
+  }
+  100% {
+  top: 0;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+  top: 10em;
+  }
+  100% {
+  top: 0;
+  }
 }
